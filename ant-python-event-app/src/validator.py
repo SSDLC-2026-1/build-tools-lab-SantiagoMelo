@@ -29,7 +29,7 @@ def validate_attendee(attendee: dict) -> list:
     if not is_valid_email(attendee.get("email", "")):
         errors.append("Invalid email")
     
-    if not is_valid_registration_code(attendee.get("registration_identifier", "")):
+    if not is_valid_registration_code(attendee.get("registration_code", "")):
         errors.append("Invalid registration code")
 
     age = attendee.get("age")

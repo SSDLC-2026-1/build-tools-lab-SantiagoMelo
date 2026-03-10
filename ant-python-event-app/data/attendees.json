@@ -4,20 +4,20 @@
     "email": "laura@example.com",
     "age": 22,
     "ticket_type": "vip",
-    "registration_identifier": "EV-1020"
+    "registration_code": "EV-1020"
   },
   {
     "name": "Pedro",
     "email": "pedroexample.com",
     "age": 19,
     "ticket_type": "general",
-    "registration_identifier": "EV-1030"
+    "registration_code": "EV-1030"
   },
   {
     "name": "Sofia",
     "email": "sofia@example.com",
     "age": 17,
     "ticket_type": "student",
-    "registration_identifier": "EV-1040"
+    "registration_code": "EV-1040"
   }
 ]

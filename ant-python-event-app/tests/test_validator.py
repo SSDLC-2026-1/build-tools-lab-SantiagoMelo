@@ -9,7 +9,7 @@ class TestValidator(unittest.TestCase):
             "email": "sara@example.com",
             "age": 25,
             "ticket_type": "vip",
-            "registration_identifier": "EV-1020"
+            "registration_code": "EV-1020"
         }
         self.assertEqual(validate_attendee(attendee), [])
 
@@ -19,7 +19,7 @@ class TestValidator(unittest.TestCase):
             "email": "juanexample.com",
             "age": 20,
             "ticket_type": "general",
-            "registration_identifier": "EV-1020"
+            "registration_code": "EV-1020"
         }
         self.assertIn("Invalid email", validate_attendee(attendee))
 
@@ -29,7 +29,7 @@ class TestValidator(unittest.TestCase):
             "email": "ana@example.com",
             "age": 16,
             "ticket_type": "student",
-            "registration_identifier": "EV-1020"
+            "registration_code": "EV-1020"
         }
         self.assertIn("Attendee must be 18 or older", validate_attendee(attendee))
 
@@ -40,7 +40,7 @@ class TestValidator(unittest.TestCase):
             "email": "sara@example.com",
             "age": 25,
             "ticket_type": "vip",
-            "registration_identifier": "EV1020"
+            "registration_code": "EV1020"
         }
         self.assertIn("Invalid registration code", validate_attendee(attendee))
 
@@ -50,7 +50,7 @@ class TestValidator(unittest.TestCase):
             "email": "sara@example.com",
             "age": 25,
             "ticket_type": "vip",
-            "registration_identifier": "EV-12"
+            "registration_code": "EV-12"
         }
         self.assertIn("Invalid registration code", validate_attendee(attendee))
 
