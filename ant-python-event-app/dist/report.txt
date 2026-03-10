@@ -1,0 +1,7 @@
+[VALID] Laura
+[INVALID] Pedro: ['Invalid email']
+[INVALID] Sofia: ['Attendee must be 18 or older']
+
+Summary
+Valid attendees: 1
+Invalid attendees: 2
